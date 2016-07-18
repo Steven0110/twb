@@ -1,0 +1,48 @@
+html, body{
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-image: url( ../img/other/bg02.jpg );
+    background-attachment: fixed;
+    color: white;
+}
+.header-izq{
+    background-color: #222;
+    opacity: 0.8;
+    padding: 1%;
+    font-size: 20px;
+    text-align: right;
+    transition: all .3s ease-in-out;
+}
+.header-izq:hover{
+    opacity: 1.0;
+    background-color: #555;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.header-der{
+    background-color: #222;
+    opacity: 0.8;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.header-der:hover{
+    opacity: 1.0;
+    background-color: crimson;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.nav{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container{
+    width: 83%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    padding: 30px;
+}

@@ -1,0 +1,17 @@
+.nav-btn{
+    background-color: rgba(0,0,0,0.3);
+    border: 2px white solid;
+    padding: 10px;
+}
+.nav-btn:hover{
+    background-color: rgba(200,200,200,1);
+    border-bottom: 2px blue solid;
+    color: black;
+    transition: all .3s linear;
+}
+.nav-btn-left{
+    border-radius: 20px 0px 0px 20px;
+}
+.nav-btn-right{
+    border-radius: 0px 20px 20px 0px;
+}
