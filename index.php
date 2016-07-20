@@ -46,7 +46,37 @@
         <button class="nav-btn nav-btn-right col-md-2 col-sm-2 col-xs-2 col-lg-2">CONTÁCTANOS</button>
     </div>
     <div class="container">
-
+        <h3 class="text">En Metal Pizza te ofrecemos el mejor servicio. Garantizado.</h3>
+        <div id="promos" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#promos" data-slide-to="0" class="active"></li>
+                <li data-target="#promos" data-slide-to="1"></li>
+                <li data-target="#promos" data-slide-to="2"></li>
+                <li data-target="#promos" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/other/promo01.jpg" class="img-rounded" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/other/promo02.jpeg"  class="img-rounded" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/other/promo03.jpg" class="img-rounded" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/other/promo04.jpeg" class="img-rounded" alt="">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#promos" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#promos" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 </body>
 

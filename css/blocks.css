@@ -1,3 +1,15 @@
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 html, body{
     box-sizing: border-box;
     height: 100%;
@@ -45,4 +57,11 @@ body{
     height: 100%;
     background-color: rgba(0,0,0, 0.6);
     padding: 30px;
+}
+.carousel img{
+    width: 100%;
+    margin: auto;
+}
+.text{
+    text-align: center;
 }
