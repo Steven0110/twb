@@ -20,6 +20,10 @@ body{
     background-attachment: fixed;
     color: white;
 }
+.logo > img{
+    width: 100%;
+}
+
 .header-izq{
     background-color: #222;
     opacity: 0.8;
@@ -53,7 +57,7 @@ body{
     margin-right: 100px;
 }
 .container{
-    width: 83%;
+    width: 84%;
     height: 100%;
     background-color: rgba(0,0,0, 0.6);
     padding: 30px;
