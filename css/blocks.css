@@ -67,7 +67,7 @@ body{
 }
 #map{
     width: 100%;
-    height: 60%;
+    height: 80%;
     border-radius: 30px;
 }
 .info-content{
@@ -76,6 +76,14 @@ body{
 .map-title{
     font-family: cursive;
     font-weight: bold;
+    margin: 0;
+}
+.info-title{
+    font-family: cursive;
+    font-weight: bold;
+    font-style: oblique;
+    margin: auto;
+    text-align: center;
 }
 .icons-bar{
     display: block;
@@ -87,3 +95,7 @@ body{
     width: 40px;
     margin: 5px;
 }
+
+
+
+
