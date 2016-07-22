@@ -5,10 +5,10 @@
     transition: all .3s linear;
 }
 .nav-btn:hover{
-    background-color: rgba(255,255,255,1);
-    border-bottom: 2px blue solid;
-    color: black;
-    transition: all .3s linear;
+    animation-name: pulso;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
 }
 .nav > .active{
     background-color: rgba(255,255,255,1);
@@ -21,4 +21,18 @@
 }
 .nav-btn-right{
     border-radius: 0px 20px 20px 0px;
+}
+@keyframes pulso{
+    0%{
+        background-color: rgba(0,0,0,0);
+        color: white;
+    }
+    50%{
+        background-color: rgba(255,255,255,1);
+        color: black;
+    }
+    100%{
+        background-color: rgba(0,0,0,0);
+        color: white;
+    }
 }
