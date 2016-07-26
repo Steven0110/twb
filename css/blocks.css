@@ -104,6 +104,16 @@ body{
     width: 40px;
     margin: 5px;
 }
+.block-2{
+    border: 2px white solid;
+    padding: 20px;
+    border-radius: 25px;
+    background-image: url(../img/other/black-texture.jpg);
+}
+.block-2 > h2{
+    text-align: center;
+    font-weight: bolder;
+}
 @media screen and (max-width: 544px){
     .nav{
         margin-left: 20px;
