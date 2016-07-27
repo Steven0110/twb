@@ -15,8 +15,10 @@
     <!-- Mis CSS -->
     <link rel="stylesheet" href="css/blocks.css" />
     <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/sweetalert.css" />
     <!-- Mis JS -->
     <script src="js/map-contact.js"></script>
+    <script src="js/sweetalert.min.js"></script>
     <script src="js/forms.js"></script>
     <title>Contacto</title>
 </head>
@@ -50,6 +52,7 @@
                         <div class="col-md-8">
                             <input type="password" class="form-control" id="psw-l" placeholder="Ingresa tu contraseña" required /> </div>
                     </div>
+                    <p id="error-login"></p>
                     <button type="button" onclick="login()" class="btn-block btn-login">Ingresar</button>
                 </form>
             </div>
@@ -86,7 +89,7 @@
                     <div class="form-group">
                         <label for="psw" class="control-label col-md-4">Contraseña:</label>
                         <div class="col-md-8">
-                            <input type="password" class="form-control" id="e-mail" placeholder="Ingresa tu contraseña" required/>
+                            <input type="password" class="form-control" id="psw" placeholder="Ingresa tu contraseña" required/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -95,7 +98,7 @@
                             <input type="password" class="form-control" id="psw-r" placeholder="Ingresa la misma contraseña anterior" required/>
                         </div>
                     </div>
-                    <button class="btn-block btn-reg" onclick="validateReg()">Registrar cuenta</button>
+                    <button type="button" class="btn-block btn-reg" onclick="registerAccount()">Registrar cuenta</button>
                 </form>
             </div>
         </div>

@@ -10,15 +10,18 @@ try{
     $stm->bindParam( ":email", $email, PDO::PARAM_STR );
     $stm->execute();
     if( $stm->rowCount() === 0 ){
+        //No account
         echo "0";
         exit;
     }
     else{
         $cliente = $stm->fetch();
         if( $cliente["password"] === $pass ){
+            //Match
             echo "1";
             exit;
         }else{
+            //Mismatch
             echo "-1";
             exit;
         }
