@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/buttons.css" />
     <!-- Mis JS -->
     <script src="js/map-contact.js"></script>
+    <script src="js/forms.js"></script>
     <title>Contacto</title>
 </head>
 
@@ -42,19 +43,62 @@
                     <div class="form-group block-3">
                         <label for="email-l" class="control-label col-md-4">E-mail:</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" id="email-l" placeholder="Ingresa tu e-mail" /> </div>
+                            <input type="email" class="form-control" id="email-l" placeholder="Ingresa tu e-mail" required /> </div>
                     </div>
                     <div class="form-group block-3">
                         <label for="psw-l" class="control-label col-md-4">Contraseña:</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" id="psw-l" placeholder="Ingresa tu contraseña" /> </div>
+                            <input type="password" class="form-control" id="psw-l" placeholder="Ingresa tu contraseña" required /> </div>
                     </div>
-                    <button type="submit" class="btn-block btn-login">Ingresar</button>
+                    <button type="button" onclick="login()" class="btn-block btn-login">Ingresar</button>
                 </form>
             </div>
         </div>
-      <div class="block-2 col-md-6 col-lg-6"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda dolorum laborum fugiat, repellendus molestiae aliquam vitae fugit placeat. Recusandae voluptas ex atque repellat nesciunt, veniam ipsa, dolores adipisci illum!
-      </div>
+
+        <div class="block-3 col-md-6">
+            <div class="block-2">
+                <h2>Registra una cuenta:</h2>
+                <form action="php/registrarCuenta.php" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="control-label col-md-4">Nombre:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="name"  placeholder="Ingresa tu nombre de pila" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apPat" class="control-label col-md-4">Apellido paterno:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="apPat"  placeholder="Ingresa tu apellido paterno" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apMat" class="control-label col-md-4">Apellido materno:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="apMat"  placeholder="Ingresa tu apellido materno" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="e-mail" class="control-label col-md-4">E-mail:</label>
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" id="e-mail" placeholder="Ingresa tu e-mail" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="psw" class="control-label col-md-4">Contraseña:</label>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="e-mail" placeholder="Ingresa tu contraseña" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="psw-r" class="control-label col-md-4">Repetir contraseña:</label>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="psw-r" placeholder="Ingresa la misma contraseña anterior" required/>
+                        </div>
+                    </div>
+                    <button class="btn-block btn-reg" onclick="validateReg()">Registrar cuenta</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 

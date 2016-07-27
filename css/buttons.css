@@ -34,6 +34,18 @@
     border: 2px crimson solid;
     transition: all .3s ease-in-out;
 }
+.btn-reg{
+    background-color: rgba(0,0,0,0);
+    border: 2px white solid;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+.btn-reg:hover{
+    background-color: dodgerblue;
+    border: 2px dodgerblue solid;
+    transition: all .3s ease-in-out;
+}
 @keyframes pulso{
     0%{
         background-color: rgba(0,0,0,0);
