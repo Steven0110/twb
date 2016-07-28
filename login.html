@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
     <!-- Mis CSS -->
     <link rel="stylesheet" href="css/blocks.css" />
     <link rel="stylesheet" href="css/buttons.css" />
     <link rel="stylesheet" href="css/sweetalert.css" />
+
     <!-- Mis JS -->
+    <script src="js/user.js"></script>
     <script src="js/map-contact.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="js/forms.js"></script>
@@ -24,11 +27,7 @@
 </head>
 
 <body>
-    <div id="header">
-        <div id="saludo" class="header-izq col-xs-6 col-sm-8 col-lg-10 col-md-10"> Buenos días Steven </div>
-        <div class="header-der col-xs-6 col-sm-4 col-lg-2 col-md-2"> Ordenar ahora </div>
-    </div>
-    <div class="logo"> <img src="img/other/logo.png" alt="Logo" /> </div>
+    <div class="logo"> <img src="img/other/logo.png" alt="Logo" onload="checkLogin()" /> </div>
     <div class="nav">
         <button class="nav-btn nav-btn-left col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='index.html'">INICIO</button>
         <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='menu.html'">MENÚ</button>

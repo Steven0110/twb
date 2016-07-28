@@ -52,6 +52,22 @@ body{
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
+#header > p{
+    padding: 15px;
+    position: fixed;
+    border-radius: 50%;
+    font-size: 22px;
+    background-color: rgba(150,150,150,.5);
+    margin: 20px;
+    transition: all .3s linear;
+}
+
+#header > p:hover{
+    background-color: rgba(50,150,50,1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
 .nav{
     margin-left: 100px;
     margin-right: 100px;
@@ -114,6 +130,7 @@ body{
     text-align: center;
     font-weight: bolder;
 }
+
 @media screen and (max-width: 544px){
     .nav{
         margin-left: 20px;
@@ -133,7 +150,7 @@ body{
     .header-izq, .header-der{
         font-size: 12px;
     }
-    h3{
+    h3, #header > p{
         font-size: 12px;
     }
 }
@@ -156,7 +173,7 @@ body{
     .header-izq, .header-der{
         font-size: 14px;
     }
-    h3{
+    h3, #header > p{
         font-size: 15px;
     }
 }
@@ -179,7 +196,7 @@ body{
     .header-izq, .header-der{
         font-size: 16px;
     }
-    h3{
+    h3, #header > p{
         font-size: 18px;
     }
 
@@ -203,7 +220,7 @@ body{
     .header-izq, .header-der{
         font-size: 16px;
     }
-    h3{
+    h3, #header > p{
         font-size: 20px;
     }
 
@@ -227,7 +244,7 @@ body{
     .header-izq, .header-der{
         font-size: 16px;
     }
-    h3{
+    h3, #header > p{
         font-size: 22px;
     }
 }
