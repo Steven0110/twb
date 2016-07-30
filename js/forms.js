@@ -17,12 +17,16 @@ function login(){
                     text: "Puede registrar una nueva cuenta con el e-mail ingresado",
                     type: "warning"
                 });
-            }else if( response == "1" ){
+            }else if( typeof response.name !== "undefined" ){
                 //Match
                 swal({
-                    title: "OK",
-                    text: "datos correctos",
+                    title: "Datos correctos",
+                    text: "Bienvenido " + response.name,
                     type: "success"
+                },
+                function(){
+                    $.cookie("username", response.name, { expires: 7, path: '/' } );
+                    location.href = "index.html";
                 });
 
             }else if( response == "-1"){

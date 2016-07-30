@@ -11,15 +11,14 @@ function unlogin(){
     location.reload();
 }
 function createHeader( nombre ){
-    var hour = new Date().getHours;
+    var hour = (new Date()).getHours();
     var time = "Buenos días";
     if( hour > 0 && hour < 12 )
         time = "Buenos días";
-    else if( hour >= 12 && hour < 7 )
+    else if( hour >= 12 && hour < 19 )
         time = "Buenas tardes";
     else
         time = "Buenas noches";
-
     var header = $("<div id='header'></div>");
     var saludo = $("<div id='saludo' class='header-izq col-xs-6 col-sm-8 col-lg-10 col-md-10'>" + time + " " + nombre + "</div>");
     var ordenar = $("<div class='header-der col-xs-6 col-sm-4 col-lg-2 col-md-2'>Ordenar ahora</div>");
