@@ -25,7 +25,7 @@ function login(){
                     type: "success"
                 },
                 function(){
-                    $.cookie("username", response.name, { expires: 7, path: '/' } );
+                    $.cookie("username", response.name );
                     location.href = "index.html";
                 });
 

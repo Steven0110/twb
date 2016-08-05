@@ -7,6 +7,8 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
@@ -18,9 +20,9 @@
 
     <!-- Mis JS -->
     <script src="js/user.js"></script>
-    <script src="js/map.js"></script>
     <title>Contacto</title>
 </head>
+
 
 <body>
     <div class="logo" >
@@ -28,16 +30,14 @@
     </div>
     <div class="nav">
         <button class="nav-btn nav-btn-left col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='index.html'">INICIO</button>
-        <div>
-        <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" id="menu">MENÚ <span class="caret"></span></button>
-        </div>
+        <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2 active" id="menu">MENÚ <span class="caret"></span></button>
         <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='promo.html'">PROMOCIONES</button>
         <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='sucursales.html'">SUCURSALES</button>
         <button id="replace" class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='login.html'">LOG IN</button>
-        <button class="nav-btn nav-btn-right col-md-2 col-sm-2 col-xs-2 col-lg-2 active" onclick="location.href='contacto.html'">CONTÁCTANOS</button>
+        <button class="nav-btn nav-btn-right col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='contacto.html'">CONTÁCTANOS</button>
     </div>
     <!-- DROPDOWN CONTENT -->
-    <div class="nav" >
+    <div class="nav list" >
         <div class="col-md-2">
         </div>
         <div class="col-md-2" id="sub-menu">
@@ -48,13 +48,8 @@
         </div>
     </div>
     <div class="container">
-        <div id="map"></div>
-
     </div>
-    <!-- Google Maps API -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4xl8Qri2quRyfkz61yCp1pM2vXY8YXr8&callback=initContact">
-    </script>
 </body>
-    <script src="js/menu.js"></script>
 
+    <script src="js/menu.js"></script>
 </html>

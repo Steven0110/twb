@@ -8,6 +8,7 @@ function checkLogin(){
 }
 function unlogin(){
     $.removeCookie("username");
+    console.log("Removed");
     location.reload();
 }
 function createHeader( nombre ){

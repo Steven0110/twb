@@ -28,11 +28,24 @@
     </div>
     <div class="nav">
         <button class="nav-btn nav-btn-left col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='index.html'">INICIO</button>
-        <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='menu.html'">MENÚ</button>
+        <div>
+        <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" id="menu">MENÚ <span class="caret"></span></button>
+        </div>
         <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='promo.html'">PROMOCIONES</button>
         <button class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2 active" onclick="location.href='sucursales.html'">SUCURSALES</button>
         <button id="replace" class="nav-btn col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='login.html'">LOG IN</button>
         <button class="nav-btn nav-btn-right col-md-2 col-sm-2 col-xs-2 col-lg-2" onclick="location.href='contacto.html'">CONTÁCTANOS</button>
+    </div>
+    <!-- DROPDOWN CONTENT -->
+    <div class="nav" >
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2" id="sub-menu">
+            <p class="opc"><a href="menu-pz.html">Pizzas</a></p>
+            <p class="opc"><a href="menu-ps.html">Postres</a></p>
+            <p class="opc"><a href="menu-b.html">Bebidas</a></p>
+            <p class="opc"><a href="menu-p.html">Paquetes</a></p>
+        </div>
     </div>
     <div class="container">
         <div id="map"></div>
@@ -42,5 +55,6 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4xl8Qri2quRyfkz61yCp1pM2vXY8YXr8&callback=initSuc">
     </script>
 </body>
+    <script src="js/menu.js"></script>
 
 </html>
